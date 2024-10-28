@@ -1,0 +1,43 @@
+#შექმენით  ვებსაიტი სადაც გამოიყენებთ ლინკებს ერთი გვერდიდან მეორე გვერდზე გადასასვლელად
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>საიტის ნავიგაცია ერთ სივრცეში</title>
+    <style>
+        /* ზოგადი სტილები */
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        nav a { margin-right: 10px; cursor: pointer; color: blue; text-decoration: underline; }
+        .content-section { display: none; }
+        .content-section.active { display: block; }
+    </style>
+</head>
+<body>
+
+    <!-- ნავიგაცია გვერდებზე -->
+    <h1>მთავარი ნავიგაცია</h1>
+    
+    <!-- "გვერდების" შიგთავსი -->
+    <section id="home" class="content-section active">
+        <h2>მთავარი გვერდი</h2>
+        <p>კეთილი იყოს თქვენი მობრძანება ჩვენს ვებსაიტზე! აქ შეგიძლიათ გაიგოთ მეტი ჩვენი კომპანიისა და მომსახურების შესახებ.</p>
+    </section>
+
+    <section id="about" class="content-section">
+        <h2>ჩვენს შესახებ</h2>
+        <p>ჩვენ ვართ კომპანია, რომელიც სთავაზობს მაღალი ხარისხის მომსახურებას მომხმარებელს. ჩვენი მისიაა მომხმარებლის კმაყოფილება და ნდობა.</p>
+    </section>
+
+    <section id="services" class="content-section">
+        <h2>სერვისები</h2>
+        <p>ჩვენი კომპანია გთავაზობთ ფართო არჩევანს სერვისებისა, მათ შორის კონსულტაცია, ტექნიკური მომსახურება და მხარდაჭერა.</p>
+    </section>
+
+    <section id="contact" class="content-section">
+        <h2>კონტაქტი</h2>
+        <p>დაგვიკავშირდით ელფოსტით: info@example.com ან დაგვირეკეთ ნომერზე: +995 555 123 456</p>
+    </section>
+
+</body>
+</html>
