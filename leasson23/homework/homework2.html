@@ -1,0 +1,48 @@
+#დაწერეთ კომენატების სახით forms-ის როლი საიტზე ასევე გაიხსენეთ რა არის ატრიბუტი
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,">
+    <title>ფასანაურ ხინკალი</title>
+</head>
+<body>
+
+    <header>
+        <h1>ფასანაურ ხინკალი</h1>
+    </header>
+
+    <section id="contact">
+        <h2>კონტაქტი</h2>
+        <p>გააზიარეთ თქვენი გამოცდილება ფასანაურ ხინკალზე ან დაგვიკავშირდით.</p>
+
+        <!-- ფორმა მომხმარებლის მონაცემების მისაღებად -->
+        <form action="/submit" method="post">
+            <!-- action: ადგილი, სადაც მონაცემები იგზავნება -->
+            <!-- method: მეთოდი (GET ან POST) თუ როგორ იგზავნება მონაცემები -->
+
+            <label for="name">სახელი:</label>
+            <!-- 'for' აკავშირებს ტექსტურ ლეიბელს input-ის ელემენტთან -->
+            <input type="text" id="name" name="name" required>
+            <!-- 'type': ტიპი (ტექსტი) და 'required' ნიშნავს რომ ველი აუცილებელია -->
+
+            <br>
+
+            <label for="email">ელ. ფოსტა:</label>
+            <input type="email" id="email" name="email" required>
+            <!-- 'type="email"': ელ. ფოსტის ფორმატი -->
+
+            <br>
+
+            <label for="message">შეტყობინება:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            <!-- 'textarea': დიდი ტექსტის შესატანად -->
+
+            <br>
+            <button type="submit">გაგზავნა</button>
+            <!-- 'button': გაგზავნის ღილაკი -->
+        </form>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!--შექმენით drop-down მენიუ age group ებისთვის როგორებიცაა under 18 , 18-30 , 31-50 , over 50-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ასაკის ჯგუფი</title>
+</head>
+<body>
+
+    <h2>აირჩიეთ თქვენი ასაკის ჯგუფი</h2>
+
+    <form action="/submit" method="POST">
+        <label for="ageGroup">ასაკის ჯგუფი:</label>
+        <select id="ageGroup" name="ageGroup" required>
+            <option value="under18">Under 18</option>
+            <option value="18to30">18-30</option>
+            <option value="31to50">31-50</option>
+            <option value="over50">Over 50</option>
+        </select>
+        <br><br>
+
+        <button type="submit">გაგზავნა</button>
+    </form>
+
+</body>
+</html>

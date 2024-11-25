@@ -1,0 +1,83 @@
+<!--გაუკეთეთ მომხმარებელს პატარა გამოკითხვა გამოიყენეთ ყველა შესაძლო ტიპის ინფუთი შეგიძლიათ ექსპერიმენტები თქვენითაც ჩაატაროთ-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>გამოკითხვა</title>
+</head>
+<body>
+
+    <h2>მოკლე გამოკითხვა</h2>
+
+    <form action="/submit" method="POST">
+        
+        <!-- სახელი -->
+        <label for="name">სახელი:</label>
+        <input type="text" id="name" name="name" placeholder="შეიყვანეთ თქვენი სახელი" required>
+        <br><br>
+
+        <!-- გვარი -->
+        <label for="surname">გვარი:</label>
+        <input type="text" id="surname" name="surname" placeholder="შეიყვანეთ თქვენი გვარი" required>
+        <br><br>
+
+        <!-- ასაკი -->
+        <label for="age">ასაკი:</label>
+        <input type="number" id="age" name="age" placeholder="შეიყვანეთ თქვენი ასაკი" min="0" max="120" required>
+        <br><br>
+
+        <!-- სქესი -->
+        <label>სქესი:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">მამაკაცი</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">ქალი</label>
+        <br><br>
+
+        <!-- ჰობი (ჩეკბოქსები) -->
+        <label>ჰობი:</label>
+        <input type="checkbox" id="reading" name="hobby" value="reading">
+        <label for="reading">წიგნის კითხვა</label>
+        <input type="checkbox" id="sports" name="hobby" value="sports">
+        <label for="sports">სპორტი</label>
+        <br><br>
+
+        <!-- ასაკის ჯგუფი (Drop-down მენიუ) -->
+        <label for="ageGroup">ასაკის ჯგუფი:</label>
+        <select id="ageGroup" name="ageGroup" required>
+            <option value="under18">Under 18</option>
+            <option value="18to30">18-30</option>
+            <option value="31to50">31-50</option>
+            <option value="over50">Over 50</option>
+        </select>
+        <br><br>
+
+        <!-- ელექტრონული ფოსტა -->
+        <label for="email">ელექტრონული ფოსტა:</label>
+        <input type="email" id="email" name="email" placeholder="შეიყვანეთ თქვენი ელექტრონული ფოსტა" required>
+        <br><br>
+
+    
+
+        <!-- კომენტარი -->
+        <label for="comment">კომენტარი:</label>
+        <textarea id="comment" name="comment" placeholder="თქვენი კომენტარი" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <!-- ფაილის ატვირთვა -->
+        <label for="fileUpload">ფაილის ატვირთვა:</label>
+        <input type="file" id="fileUpload" name="fileUpload">
+        <br><br>
+
+        <!-- შერჩევა  -->
+        <label for="rating">გააკეთეთ შეფასება:</label>
+        <input type="range" id="rating" name="rating" min="1" max="5">
+        <br><br>
+
+        <!-- დამადასტურებელი ღილაკი -->
+        <button type="submit">გაგზავნა</button>
+    </form>
+
+</body>
+</html>

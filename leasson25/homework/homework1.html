@@ -1,0 +1,40 @@
+<!--შექმენით ფორმა 4 input-ით სახელისთვის გვარისთვის ემაილისთვის და პაროლისთვის გამოიყენეთ ყველა ნასწავლი ატრიბუტი -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაციის ფორმა</title>
+</head>
+<body>
+
+    <h2>რეგისტრაცია</h2>
+
+    <form action="/submit" method="POST">
+
+        <!-- სახელი -->
+        <label for="firstName">სახელი:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="დაწერეთ სახელი" required minlength="2" maxlength="30">
+        <br><br>
+
+        <!-- გვარი -->
+        <label for="lastName">გვარი:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="დაწერეთ გვარი" required minlength="2" maxlength="30">
+        <br><br>
+
+        <!-- gmail -->
+        <label for="gmail">მეილი:</label>
+        <input type="gmail" id="gmail" name="gmail" placeholder="მეილი" required>
+        <br><br>
+
+        <!-- პაროლი -->
+        <label for="password">პაროლი:</label>
+        <input type="password" id="password" name="password" placeholder="დაწერეთ პაროლი" required minlength="8" maxlength="20">
+        <br><br>
+
+        <!-- გაგზავნა -->
+        <button type="submit">გაგზავნა</button>
+    </form>
+
+</body>
+</html>

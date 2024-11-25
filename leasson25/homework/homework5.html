@@ -1,0 +1,48 @@
+<!--დაწერეთ ფორმა რომელშიც მომხმარებელი დარეგისტრირდება რაიმე event-ზე-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>დარეგისტრირდით ღონისძიებაზე</title>
+</head>
+<body>
+
+    <h2>დარეგისტრირდით ჩვენი ღონისძიებისთვის</h2>
+
+    <form action="/register_event" method="POST">
+        <!-- სახელი -->
+        <label for="firstName">სახელი:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <br><br>
+
+        <!-- გვარი -->
+        <label for="lastName">გვარი:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <br><br>
+
+        <!-- ელ. ფოსტა -->
+        <label for="email">ელ. ფოსტა:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- ასაკი -->
+        <label for="age">ასაკი:</label>
+        <input type="number" id="age" name="age" min="18" max="100" required>
+        <br><br>
+
+        <!-- ღონისძიების ტიპი -->
+        <label for="event">ღონისძიების ტიპი:</label>
+        <select id="event" name="event" required>
+            <option value="conference">კონფერენცია</option>
+            <option value="workshop">ვორკშოფი</option>
+            <option value="webinar">ვებინარი</option>
+        </select>
+        <br><br>
+
+        <!-- გასაწევი -->
+        <button type="submit">რეგისტრაცია</button>
+    </form>
+
+</body>
+</html>
